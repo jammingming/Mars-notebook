@@ -1,0 +1,22 @@
+# 默认忽略所有文件，只保留 Markdown 和图片
+*
+
+# 保留 .md 和图片文件
+!*.md
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*.webp
+!*.bmp
+
+# 保留目录结构（以便进入子目录）
+!**/
+
+# 允许提交 .gitignore 本身
+!.gitignore
+
+# 本地配置目录（必须放在最后，覆盖上面的 !**/ 规则）
+.claude/
+.obsidian/
