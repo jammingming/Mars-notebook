@@ -24,8 +24,36 @@
 - 如果是激波重整，激波结构会随时间演化，不同周期的剖面无法重合，且会出现 “双斜坡” 的内部结构。
 这一结果直接排除了激波重整的可能性。
 
+## ΔB-Δv 混合法
+
+$\Delta\boldsymbol{B} = \boldsymbol{B_d} - \boldsymbol{B_u},~ \Delta v = \boldsymbol{v_d} - \boldsymbol{v_u}$ 其中 $d$ 表示激波下游 $u$ 表示激波上游，故激波法向和激波法向传播速度
+$$\boldsymbol{n}_{bs}= \pm \frac{(\Delta \boldsymbol{B} \times \Delta \boldsymbol{v}) \times \Delta \boldsymbol{B}}{|(\Delta \boldsymbol{B} \times \Delta \boldsymbol{v}) \times \Delta \boldsymbol{B}|}$$
+$$V_{bs,n}=\frac {\left| \boldsymbol{n}_{bs} \times \left( \boldsymbol{V}_{d} \times \boldsymbol{B}_{d}-\boldsymbol{V}_{u} \times \boldsymbol{B}_{u}\right) \right| }{|\Delta B|}$$
+前者基于==**磁共面定理**==和==**速度共面定理**==，后者基于==**理想 MHD 的切向电场连续**==条件：在激波静止参考系中，激波两侧的切向电场分量必须相等。
+混合法给出的平均法向作为基准，通过MDD方法得到激波法向投影到**激波对齐坐标系（SAC）**
+
+## STD算法
+### 1. 基本方程：随体导数为零
+
+在随激波结构一起运动的参考系中，激波的磁场剖面不随时间变化，因此磁场的**随体导数（全微分）为 0**：
+$$\frac{d\boldsymbol{B}}{dt} = \frac{\partial \boldsymbol{B}}{\partial t} + (\boldsymbol{v} \cdot \nabla)\boldsymbol{B} = 0$$
+这是 STD 方法的核心方程，物理意义非常明确：
+- $\partial \boldsymbol{B}/\partial t$：卫星原地观测到的磁场时间变化率；
+- $(\boldsymbol{v} \cdot \nabla)\boldsymbol{B}$：结构运动带来的平流项 —— 结构以速度$\boldsymbol{v}$运动，相当于空间梯度被速度 “带着走”。
+方程变形后就是结构速度与磁场变化的关系：
+$$\frac{\partial \boldsymbol{B}}{\partial t} = - (\boldsymbol{v} \cdot \nabla)\boldsymbol{B}$$
+### 2. 准一维条件下的简化
+
+对于准一维激波，磁场仅沿法向\(\boldsymbol{n}\)变化，因此磁场的空间梯度张量只有法向分量：
+$$\nabla \boldsymbol{B} = \boldsymbol{n} \cdot \frac{\partial \boldsymbol{B}}{\partial n}$$
+其中$\partial \boldsymbol{B}/\partial n$是磁场矢量沿法向的空间梯度（矢量）。
+同时，激波的切向运动不会改变卫星观测（切向均匀），只有法向运动有物理意义，因此结构速度可写为$\boldsymbol{v} = v_n \cdot \boldsymbol{n}$。
+将二者代入核心方程，即可得到法向速度的简洁表达式：
+$$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\partial n}$$
+通俗理解：==**激波沿法向的运动速度 = 磁场的时间变化率 ÷ 磁场沿法向的空间梯度**。==
+
 ## ***J. S. Halekas***
-![[Pasted image 20260805223400.png]]
+![[MAVEN_20220817.png]]
 中等马赫数、近日点高氢准垂直激波（Ms=5.8，Ls=287°）
 
 ### 数据筛选
