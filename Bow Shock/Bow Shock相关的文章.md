@@ -44,7 +44,7 @@ $$\frac{d\boldsymbol{B}}{dt} = \frac{\partial \boldsymbol{B}}{\partial t} + (\bo
 $$\frac{\partial \boldsymbol{B}}{\partial t} = - (\boldsymbol{v} \cdot \nabla)\boldsymbol{B}$$
 ### 2. 准一维条件下的简化
 
-对于准一维激波，磁场仅沿法向\(\boldsymbol{n}\)变化，因此磁场的空间梯度张量只有法向分量：
+对于准一维激波，磁场仅沿法向$\boldsymbol{n}$变化，因此磁场的空间梯度张量只有法向分量：
 $$\nabla \boldsymbol{B} = \boldsymbol{n} \cdot \frac{\partial \boldsymbol{B}}{\partial n}$$
 其中$\partial \boldsymbol{B}/\partial n$是磁场矢量沿法向的空间梯度（矢量）。
 同时，激波的切向运动不会改变卫星观测（切向均匀），只有法向运动有物理意义，因此结构速度可写为$\boldsymbol{v} = v_n \cdot \boldsymbol{n}$。
