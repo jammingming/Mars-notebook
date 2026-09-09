@@ -1,6 +1,6 @@
 
 [Bow Shock Ripples and Their Modulation of Whistler Wave Packets: Jing‐Huan Li](https://doi.org/10.1029/2024GL111590)
-[Ion Reflection From the Martian Bow Shock:  J. S. Halekas](https://doi. org/10.1029/2025JA034317)
+[Ion Reflection From the Martian Bow Shock:  J. S. Halekas](https://doi.org/10.1029/2025JA034317)
 [Energy Dissipation Mechanisms at the Bow Shock of an Outer Planet – Jupiter: J. Joseph](https://doi.org/10.21203/rs.3.rs-7376489/v1)
 ## ***Jing-Huan Li*** 
 
