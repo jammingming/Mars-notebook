@@ -56,7 +56,7 @@ $$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\par
 ## ***J. S. Halekas***
 ![[MAVEN_20220817.png]]
 中等马赫数、近日点高氢准垂直激波（Ms=5.8，Ls=287°）
-
+==这个scattered background是仪器散射太阳风造成的污染==
 ### 数据筛选
 
 - **轨道范围硬性筛选**：只保留**远拱点伸入太阳风上游**的轨道时段；MAVEN 远拱点最高～6200 km（≈1.8 \[$R_M$\]），刚好可以抵达弓激波外侧上游区域。
