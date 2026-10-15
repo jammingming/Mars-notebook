@@ -49,3 +49,25 @@ $s_0$ denotes the smallest resolvable scale while J sets the largest scale; $s_0
 ### Cone of influence
 Finite-length time series cause edge errors in wavelet power spectra because FFT assumes periodic data. Zero-padding (used here) extends the series length to the next power of two to reduce edge effects and accelerate FFT, yet it creates artificial discontinuities and suppresses power near endpoints at large scales. The cone of influence (COI) marks the region where edge contamination matters, defined by the e-folding time where edge-induced power falls by \(e^{-2}\). Features inside the COI may be artifacts rather than real signals. The COI width depends on wavelet shape: narrower wavelets have smaller COI. COI also helps distinguish isolated noise spikes from genuine periodic oscillations. Periodic data require no zero-padding and have no COI.
 
+### Significance levels
+#### Fourier red noise spectrum
+A simple model for red noise is the univariate lag-1 autoregressive [AR(1), or Markov] process:
+$$
+X_n = \alpha X_{n-1} + Z_n
+$$
+where α is the assumed lag-1 autocorrelation, $X_0 = 0$, and zn is taken from Gaussian white noise. Following Gilman et al. (1963), the discrete Fourier power spectrum of (15), after normalizing, is
+$$
+P_k = \frac{1-\alpha^2}{1+\alpha^2-2\alpha\cos(2\pi k/N)}
+$$
+where k = 0 … N/2 is the frequency index. Note that α = 0 gives a white-noise spectrum
+
+#### Significance levels
+using a background noise null hypothesis. The null hypothesis assumes the time series follows a background spectrum (typically AR(1) red noise). A wavelet power peak is statistically significant at the 5% level (95% confidence) when its value exceeds the corresponding background threshold.
+
+If the original time series is Gaussian, its Fourier coefficients have normally distributed real and imaginary parts. The squared magnitude of Fourier power $|\hat x_k|^2$ follows a $\chi^2_2$(chi-square with 2 degrees of freedom, DOF) distribution. The 95% confidence threshold is obtained by multiplying the background spectrum by the 95th percentile of $\chi^2_2$.
+
+Wavelet coefficients act as band-pass filtered Fourier components. For **complex wavelets (e.g., Morlet)**, the local wavelet power $|W_n(s)|^2$ obeys the $\chi^2_2$ distribution. For **real-valued wavelets (e.g., Mexican hat)**, power follows $\chi^2_1$ (1 DOF). This statistical distribution is independent of the choice of mother wavelet except for the DOF difference between real and complex wavelets.
+
+At each time n and scale s, compute the background power $P_k$ from the Fourier frequency matched to scale s, then construct the 95% significance contour. Smoothing the wavelet power in either time or scale domain increases effective DOFs and improves statistical confidence, and the related DOF and significance levels for smoothing are discussed later.
+
+#### Smoothing in time and scale
