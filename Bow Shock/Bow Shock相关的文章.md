@@ -87,6 +87,8 @@ $$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\par
 
 [[激波反射离子的文章]]
 
+> 顺激波位置本身也可以从"波模发生率"反演出来：[[火星磁层边界相关文章]]（Duanmu et al. 2026）用 10 年 MAVEN 的低频波模统计拟合 BS，并与 Trotignon (2006)、Edberg (2008) 经验模型对比，同时给出 BS 内侧的 MLB。
+
 
 ## ***J. Joseph***
 ### 研究背景
@@ -95,16 +97,16 @@ $$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\par
 
 从地球到木星，阿尔文马赫数从～8 升高到 > 20，理论预期木星高马赫数弓激波的静电波耗散效应会更强。过去受仪器、遥测限制，缺少木星弓激波高分辨率等离子体波观测，朱诺号 (Juno) 直到 2024 年 11 月才把爆发模式波形采集对准弓激波区域。本文使用朱诺号**50 kHz、16 位高动态范围**的全新观测数据开展研究。
 ### 观测事件
-![[Pasted image 20260825132821.png]]
+![[Juno_Jupiter_bow_shock_overview_20241210-11.png]]
 2024‑12‑10~11 朱诺号在木星昏侧磁层，距离木星约 81.44 $R_J$处两次穿越弓激波：
-![[Pasted image 20260825133536.png]]
+![[Juno_CaseI_quasi_parallel_ion_foreshock.png]]
 1. **Case I（出流，准平行激波）**：$\theta_{Bn}≈0\sim44^\circ$，阿尔文马赫数～9；存在延伸的离子前激波区，观测到超低频 ULF 波、shocklet，反射离子数密度被 ULF 波调制。
-![[Pasted image 20260825133619.png]]
-![[Pasted image 20260825134524.png]]
+![[Juno_CaseII_quasi_perp_shock_reformation.png]]
+![[Juno_CaseII_IAW_harmonics_ECDI.png]]
 2. **Case II（入流，准垂直激波）**：$\theta_{Bn}≈53^\circ$，阿尔文马赫数～9；只有紧凑的激波脚（foot）区域，观测到周期约 8.3 s 的磁场周期性重构信号，对应约 0.26 倍质子回旋周期。
 
 ### 关键观测结果
-![[Pasted image 20260825134818.png]]
+![[Juno_bow_shock_wave_modes_schematic.png]]
 1. **等离子体波种类**：木星弓激波同样观测到地球弓激波熟知的各类波：朗缪尔波、离子声波 IAW、ECDI、静电孤立波 ESW；但没有确认低混杂波（仪器带宽限制）。
 2. **非线性离子声波（Case II 激波脚）**：首次在行星弓激波观测到带谐波结构的 IAW，波形出现平顶畸变，暗示粒子捕获效应，谐波拓宽了电子共振加热的能量区间。
 3. **强 ECDI（Case II 激波斜坡）**：激波斜坡处出现很强 ECDI，频谱按电子回旋频率等间隔出现多阶峰；由于日心距离增大背景磁场减弱，外行星环境更利于 ECDI 增长，木星的 ECDI 活动强于地球。

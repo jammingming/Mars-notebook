@@ -2,8 +2,8 @@
 
 ## ***Y. Dong***
 火星上观测到plume事件
-![[Pasted image 20260918175144.png]]
-![[Pasted image 20260918175209.png]]
+![[MAVEN_plume_orbit_20141218_overview.png]]
+![[MAVEN_O_escape_MSE_distribution.png]]
 ### 一、统计方法
 
 1. **数据基础**：使用 MAVEN‑STATIC 仪器，时间分辨率**128 s**，筛选 **>25 eV 的 O⁺离子**；选取 2014‑11‑11 至 2015‑02‑28 共 3 个月观测，仅保留轨道可以穿越弓激波、能够获取上游太阳风与 IMF 磁场的轨道数据地球与行星...。
@@ -18,7 +18,7 @@
 6. **误差来源**：STATIC 仪器视场遮挡、太阳风信号串扰扣除、弓激波内侧 IMF 代理带来不确定性，通量结果整体存在**20%‑50% 的系统误差**。
 
 ### 二、两张核心统计图解读
-![[Pasted image 20260918193237.png]]
+![[Dong_O_flux_velocity_plume_frequency_MSE.png]]
 
 #### Fig.3 MSE x‑z 平面 O⁺通量、速度、plume 观测频率统计分布图
 
@@ -33,7 +33,7 @@
 > 虚线代表经验模型弓激波 BS 与磁堆积边界 MPB 位置。
 
 #### Fig.4 plume 截面与尾向截面的净逃逸通量分布图
-![[Pasted image 20260918193305.png]]
+![[Dong_escape_flux_cross_sections.png]]
 > (a)(c) 尾向逃逸截面；(b)(d) plume 羽流截面；(a)(b) 窄截面；(c)(d) 加宽截面；灰色像素代表向内回落的返回通量。
 
 1. 子图 (a)(c)：尾向（‑x 方向）逃逸截面，通量集中在截面中心；加宽截面 (c) 覆盖更大空间，得到更高的总逃逸率。

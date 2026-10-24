@@ -6,7 +6,7 @@ Assume that one has a time series, $x_n$ , with equal time spacing $δt$ and $n 
 Morlet wavelet
 $$ψ_0 (η) = \pi^{-1/4}\mathrm{e}^{i\omega_0\eta}\mathrm{e}^{-\eta^2/2}$$
 $$\hat\psi_0(\omega)=\pi^{-1/4}H(\omega)\mathrm{e}^{-\frac{(\omega-\omega_0)^2}{2}}$$
-![[Pasted image 20261015143828.png]]
+![[Morlet_wavelet.png]]
 continuous wavelet transform
 $$
 W_n(s) = \sum_{n'=0}^{N-1} X_{n'} \psi^{*}\left[ \frac{(n'-n)\delta t}{s} \right]
@@ -43,7 +43,7 @@ Thus, the wavelet transform is weighted only by the amplitude of the Fourier coe
 ==Wavelets can be categorized by four properties: orthogonality, complex/real type, width, and shape. Orthogonal wavelets yield compact signal representations but suffer from spectrum changes under time shifts, while nonorthogonal continuous wavelets (used here) have redundant, smoothly varying coefficients and are preferred for time series. Complex wavelets capture amplitude and phase of oscillations; real wavelets detect peaks or jumps. Wavelet width controls the time–frequency uncertainty tradeoff. Wavelet shape should match signal features, though for wavelet power spectra the choice often only weakly affects qualitative results.==
 
 ### Choice of scales
-![[Pasted image 20261015230412.png]]
+![[Table1_wavelet_properties.png]]
 For nonorthogonal wavelet analysis, one can use an arbitrary set of scales to build up a more complete picture. It is convenient to write the scales as fractional pow ers of two: $$ \begin{align*} s_j &= s_0\, 2^{j\delta_j}, \quad j=0,1,\dots,J \\ J &= \delta_j^{-1}\log_2\big(N\delta t / s_0\big), \end{align*} $$
 $s_0$ denotes the smallest resolvable scale while J sets the largest scale; $s_0$ is selected such that its equivalent Fourier period is roughly $2\delta t$. The parameter $\delta_j$ controls the density of scale sampling and depends on the wavelet’s spectral width. For the Morlet wavelet, 0.5 is the maximum $\delta_j$ maintaining adequate scale sampling, and smaller $\delta_j$ yields finer scale resolution. Other wavelets can adopt larger $\delta_j$.
 
@@ -72,7 +72,7 @@ Wavelet coefficients act as band-pass filtered Fourier components. For **complex
 At each time n and scale s, compute the background power $P_k$ from the Fourier frequency matched to scale s, then construct the 95% significance contour. Smoothing the wavelet power in either time or scale domain increases effective DOFs and improves statistical confidence, and the related DOF and significance levels for smoothing are discussed later.
 
 #### Smoothing in time and scale
-![[Pasted image 20261015230631.png]]
+![[Table2_wavelet_reconstruction_factors.png]]
 ##### Time averaging (global wavelet spectrum)
 The time-averaged wavelet power over a time window from $n_1$ to $n_2$ is defined as
 $$
