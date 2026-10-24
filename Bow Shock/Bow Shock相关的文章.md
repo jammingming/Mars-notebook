@@ -1,8 +1,5 @@
-
-[Bow Shock Ripples and Their Modulation of Whistler Wave Packets: Jing‐Huan Li](https://doi.org/10.1029/2024GL111590)
-[Ion Reflection From the Martian Bow Shock:  J. S. Halekas](https://doi.org/10.1029/2025JA034317)
-[Energy Dissipation Mechanisms at the Bow Shock of an Outer Planet – Jupiter: J. Joseph](https://doi.org/10.21203/rs.3.rs-7376489/v1)
 ## ***Jing-Huan Li*** 
+[Bow Shock Ripples and Their Modulation of Whistler Wave Packets: Jing‐Huan Li](https://doi.org/10.1029/2024GL111590)
 
 核心是利用 MMS 四星编队的同步观测，解决了空间物理领域一个长期争议：**准垂直弓激波处观测到的周期性磁场增强，本质是激波表面的涟漪（空间结构），而非激波重整（时间演化过程）**
 ![[MMS 2021-05-02.png]]
@@ -54,6 +51,8 @@ $$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\par
 通俗理解：==**激波沿法向的运动速度 = 磁场的时间变化率 ÷ 磁场沿法向的空间梯度**。==
 
 ## ***J. S. Halekas***
+[Ion Reflection From the Martian Bow Shock:  J. S. Halekas](https://doi.org/10.1029/2025JA034317)
+
 ![[MAVEN_20220817.png]]
 中等马赫数、近日点高氢准垂直激波（Ms=5.8，Ls=287°）
 ==这个scattered background是仪器散射太阳风造成的污染==
@@ -88,9 +87,13 @@ $$v_n = - \frac{\partial \boldsymbol{B}/\partial t}{\partial \boldsymbol{B}/\par
 [[激波反射离子的文章]]
 
 > 顺激波位置本身也可以从"波模发生率"反演出来：[[火星磁层边界相关文章]]（Duanmu et al. 2026）用 10 年 MAVEN 的低频波模统计拟合 BS，并与 Trotignon (2006)、Edberg (2008) 经验模型对比，同时给出 BS 内侧的 MLB。
+>
+> 那两个经验模型的形式、参数含义与适用边界见 [[火星边界面的圆锥曲线模型]]。
 
 
 ## ***J. Joseph***
+[Energy Dissipation Mechanisms at the Bow Shock of an Outer Planet – Jupiter: J. Joseph](https://doi.org/10.21203/rs.3.rs-7376489/v1)
+
 ### 研究背景
 
 弓激波是太阳风与行星磁场相互作用形成的边界；无碰撞等离子体环境下，库仑碰撞不足以耗散太阳风动能，**波‑粒子相互作用**是能量耗散的核心路径。地球弓激波已经证实离子声波 (IAW)、电子回旋漂移不稳定性 (ECDI)、静电孤立波 (ESW)、哨声波等等离子体波承担能量转换。

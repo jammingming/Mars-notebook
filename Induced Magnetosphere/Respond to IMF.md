@@ -1,6 +1,6 @@
+## ***Rentong Lin***
 [Induced magnetosphere of Mars responds fast to interplanetary magnetic field rotation: Rentong Lin](https://doi.org/10.1038/s41467-026-76861-1)
 
-## ***Rentong Lin***
 ### 研究背景
 
 火星没有全球本征磁场，太阳风与火星电离层相互作用形成**感应磁层（induced magnetosphere）**。行星际磁场 IMF 方向、大小变化会显著改变感应磁层形态、磁重联位置、地壳场上方微型磁层、行星离子逃逸等一系列空间物理过程。
