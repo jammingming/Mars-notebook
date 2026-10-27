@@ -117,6 +117,15 @@ $$\frac{\delta v}{\delta B/B_0}\sim v_{\rm ph}
 \quad\Longrightarrow\quad
 D_R=\frac{(\delta v/V_0)^2}{(\delta B/B_0)^2}\sim\left(\frac{v_{\rm ph}}{V_0}\right)^2$$
 
+**这一步怎么来的**：在等离子体静止系里取单色平面波 $e^{i(\boldsymbol{k}\cdot\boldsymbol{r}-\omega t)}$，理想 Ohm 定律 $\delta\boldsymbol{E}=-\delta\boldsymbol{v}\times\boldsymbol{B}_0$ 代入 Faraday 定律 $\partial_t\delta\boldsymbol{B}=-\nabla\times\delta\boldsymbol{E}$，得
+
+$$\delta\boldsymbol{B}=\frac{1}{\omega}\left[\delta\boldsymbol{v}(\boldsymbol{k}\cdot\boldsymbol{B}_0)-\boldsymbol{B}_0(\boldsymbol{k}\cdot\delta\boldsymbol{v})\right]\quad\Longrightarrow\quad\frac{\delta B}{B_0}\sim\frac{\delta v}{v_{\rm ph}}$$
+
+- 两个特例可手算核对：Alfvén（$\omega=kv_A\cos\varphi$）给 $\delta B/B_0=\delta v/v_A$；垂直传播的 fast（$\omega=kv_f$）给 $\delta B/B_0=\delta v/v_f$——比例常数都是速度，且正是相速度量级；
+- 量纲上也只可能这样：$v_{\rm ph}=\omega/k$ 是线性感应方程里**唯一**带速度量纲的量，剩下的只能是 $\cos\varphi$ 之类的 $O(1)$ 几何因子；
+- 反过来说，$\delta v$ 与 $\delta B/B_0$ 是**绑死**的，不能独立给定——这正是"不知道 $k$ 也能靠幅度比判波模"的根据；
+- 失效处：平行传播的声学支 $\delta\boldsymbol{B}=0$（比值无定义）；mirror 在等离子体静止系里 $\omega=0$，线性波关系不适用，但结构静止就意味着该系里 $\delta v\approx0$，所以 $D_R\approx0$ 是"冻结"的直接结果，不是把 $(v_{\rm ph}/V_0)^2$ 外推到 $v_{\rm ph}=0$ 得来的。
+
 所以：
 
 - $D_R$ **不是**"多普勒效应与动理学效应的比值"。叫 "Doppler" 是因为 $D_R$ 小意味着==仪器看到的时间变化几乎全部来自 $\boldsymbol{k}\cdot\boldsymbol{V}_0$ 的平流==，没有内禀的波动部分；
