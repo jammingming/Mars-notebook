@@ -4,3 +4,5 @@
 ## 经典文章
 
 [Observations of low-frequency electromagnetic plasma waves upstream from the Martian shock: D. A. Brain](https://doi.org/10.1029/2000JA000416)
+
+金星上同一类波（Venus Express MAG，只落在 $f_p$、左旋、准平行场条件才长起来，无等离子体数据）：[[金星上游质子回旋波]]
